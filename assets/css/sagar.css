@@ -1,0 +1,92 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url(/assets/images/sagarbg9.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-sizing:border-box ;
+    font-family: sans-serif;
+}
+.menu-bar {
+    background:rgb(100, 68, 0);
+    text-align: center;
+}
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+
+}
+.menu-bar ul li {
+    width: 30px;
+    margin: 20px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+.active, .menu-bar ul li :hover
+{
+    background-color: darkcyan;
+    border-radius: 2px;
+} 
+.sub-menu-1
+{
+    display: none;
+}   
+.menu-bar ul li :hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background-color: darkcyan;
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+.menu-bar ul li :hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li :hover .sub-menu-1
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li :hover .sub-menu-1 ul li :last-child
+{
+    border-bottom: none;
+
+}
+.menu-bar ul li :hover .sub-menu-1 ul li :hover
+{
+    color: teal;
+
+}
+.maindiv{
+    width: 70%;
+    height: 400px;
+    position: absolute;
+    left: 50;
+    transform:translate(-50%,-50%);
+    background-image: url(sanjaydrive.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px white;
+    animation: slider 9s infinite linear;
+
+}
+@keyframes slider{
+    0%{background-image: url(sanjaydrive.jpg);}
+    20%{background-image: url(Rahatgarh_waterfall.jpg);}
+    40%{background-image: url(rajghat.jpg);}
+    60%{background-image: url(sagar2.jpg);}
+    80%{background-image:url(sagar4.jpg) ;}
+}
